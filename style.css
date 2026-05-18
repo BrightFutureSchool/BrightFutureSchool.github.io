@@ -60,3 +60,12 @@ button {
   transform: scale(1.05);
   background: #dbeafe;
 }
+.question {
+  background: white;
+  padding: 25px;
+  margin: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 24px;
+  line-height: 2;
+}
