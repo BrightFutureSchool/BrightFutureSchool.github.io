@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Linear Functions Practice</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- MathJax -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
+      }
+    };
+  </script>
+
+  <script async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <!-- TikZJax -->
+  <link rel="stylesheet"
+    href="https://tikzjax.com/v1/fonts.css">
+
+  <script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Linear Functions Practice</h1>
+    <p>Math 8 Alberta Curriculum</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="math.html">Math</a>
+    <a href="math8.html">Math 8</a>
+    <a href="linear-functions.html">Lesson</a>
+  </nav>
+
+  <section class="hero">
+
+    <h2>Practice Questions</h2>
+
+    <!-- QUESTION 1 -->
+
+    <div class="question">
+
+      <h3>Question 1</h3>
+
+      <p>
+        Complete the table for:
+      </p>
+
+      <p>\( y = 2x + 1 \)</p>
+
+      <table border="1" style="margin:auto;">
+
+        <tr>
+          <th>x</th>
+          <th>y</th>
+        </tr>
+
+        <tr>
+          <td>-3</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>-1</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>0</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td></td>
+        </tr>
+
+      </table>
+
+    </div>
+
+    <!-- QUESTION 2 -->
+
+    <div class="question">
+
+      <h3>Question 2</h3>
+
+      <p>
+        Find the value of \( y \):
+      </p>
+
+      <p>\( y = 3x - 2 \)</p>
+
+      <p>\( x = 4 \)</p>
+
+    </div>
+
+    <!-- QUESTION 3 -->
+
+    <div class="question">
+
+      <h3>Question 3</h3>
+
+      <p>
+        Graph the linear function:
+      </p>
+
+      <p>\( y = x + 2 \)</p>
+
+      <div class="diagram">
+
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.8]
+
+% grid
+\draw[step=1cm,gray!30,very thin] (-5,-5) grid (5,5);
+
+% axes
+\draw[->,thick] (-5,0)--(5,0);
+\draw[->,thick] (0,-5)--(0,5);
+
+% x labels
+\foreach \x in {-4,-3,-2,-1,1,2,3,4}
+{
+\node at (\x,-0.4) {\small \x};
+}
+
+% y labels
+\foreach \y in {-4,-3,-2,-1,1,2,3,4}
+{
+\node at (-0.4,\y) {\small \y};
+}
+
+% axis labels
+\node[right] at (5,0) {$x$};
+\node[above] at (0,5) {$y$};
+
+\end{tikzpicture}
+</script>
+
+      </div>
+
+    </div>
+
+    <!-- QUESTION 4 -->
+
+    <div class="question">
+
+      <h3>Question 4</h3>
+
+      <p>
+        Determine the slope of the line.
+      </p>
+
+      <div class="diagram">
+
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.8]
+
+% grid
+\draw[step=1cm,gray!30,very thin] (-5,-5) grid (5,5);
+
+% axes
+\draw[->,thick] (-5,0)--(5,0);
+\draw[->,thick] (0,-5)--(0,5);
+
+% labels
+\foreach \x in {-4,-3,-2,-1,1,2,3,4}
+{
+\node at (\x,-0.4) {\small \x};
+}
+
+\foreach \y in {-4,-3,-2,-1,1,2,3,4}
+{
+\node at (-0.4,\y) {\small \y};
+}
+
+% line
+\draw[red,thick] (-4,-3)--(4,5);
+
+% points
+\filldraw[black] (-2,-1) circle (2pt);
+\filldraw[black] (2,3) circle (2pt);
+
+% coordinate labels
+\node[left] at (-2,-1) {\small $(-2,-1)$};
+\node[right] at (2,3) {\small $(2,3)$};
+
+\end{tikzpicture}
+</script>
+
+      </div>
+
+    </div>
+
+    <!-- QUESTION 5 -->
+
+    <div class="question">
+
+      <h3>Question 5</h3>
+
+      <p>
+        Is this relation linear or non-linear?
+      </p>
+
+      <table border="1" style="margin:auto;">
+
+        <tr>
+          <th>x</th>
+          <th>y</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>3</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>5</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>7</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>9</td>
+        </tr>
+
+      </table>
+
+    </div>
+
+    <!-- QUESTION 6 -->
+
+    <div class="question">
+
+      <h3>Question 6</h3>
+
+      <p>
+        Find the equation of the line.
+      </p>
+
+      <div class="diagram">
+
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.8]
+
+% grid
+\draw[step=1cm,gray!30,very thin] (-5,-5) grid (5,5);
+
+% axes
+\draw[->,thick] (-5,0)--(5,0);
+\draw[->,thick] (0,-5)--(0,5);
+
+% labels
+\foreach \x in {-4,-3,-2,-1,1,2,3,4}
+{
+\node at (\x,-0.4) {\small \x};
+}
+
+\foreach \y in {-4,-3,-2,-1,1,2,3,4}
+{
+\node at (-0.4,\y) {\small \y};
+}
+
+% line
+\draw[green!60!black,thick] (-4,-1)--(4,3);
+
+% points
+\filldraw[black] (-2,0) circle (2pt);
+\filldraw[black] (2,2) circle (2pt);
+
+% coordinate labels
+\node[above left] at (-2,0) {\small $(-2,0)$};
+\node[above right] at (2,2) {\small $(2,2)$};
+
+\end{tikzpicture}
+</script>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>

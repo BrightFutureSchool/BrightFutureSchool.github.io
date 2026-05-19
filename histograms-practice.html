@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Histograms Practice</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- TikZJax -->
+  <link rel="stylesheet"
+    href="https://tikzjax.com/v1/fonts.css">
+
+  <script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Histograms Practice</h1>
+    <p>Math 8 Alberta Curriculum</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="math.html">Math</a>
+    <a href="math8.html">Math 8</a>
+    <a href="histograms.html">Lesson</a>
+  </nav>
+
+  <section class="hero">
+
+    <h2>Practice Questions</h2>
+
+    <!-- QUESTION 1 -->
+
+    <div class="question">
+
+      <h3>Question 1</h3>
+
+      <p>
+        Create a histogram using intervals of 10.
+      </p>
+
+      <p>
+        45, 52, 57, 61, 63, 68, 71, 74, 76, 82, 85, 89, 91
+      </p>
+
+    </div>
+
+    <!-- QUESTION 2 -->
+
+    <div class="question">
+
+      <h3>Question 2</h3>
+
+      <p>
+        Use the histogram to answer the questions.
+      </p>
+
+      <div class="diagram">
+
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.7]
+
+% axes
+\draw[->,thick] (0,0)--(11,0);
+\draw[->,thick] (0,0)--(0,8);
+
+% y labels
+\foreach \y in {1,2,3,4,5,6,7}
+{
+  \draw (-0.1,\y)--(0.1,\y);
+  \node[left] at (0,\y) {\y};
+}
+
+% bars
+\draw[fill=blue!30] (1,0) rectangle (3,2);
+\draw[fill=blue!30] (3,0) rectangle (5,5);
+\draw[fill=blue!30] (5,0) rectangle (7,7);
+\draw[fill=blue!30] (7,0) rectangle (9,4);
+\draw[fill=blue!30] (9,0) rectangle (11,2);
+
+% x labels
+\node[below] at (2,0) {0-10};
+\node[below] at (4,0) {10-20};
+\node[below] at (6,0) {20-30};
+\node[below] at (8,0) {30-40};
+\node[below] at (10,0) {40-50};
+
+% titles
+\node[above] at (5.5,8) {Ages of Participants};
+\node[rotate=90] at (-1,4) {Frequency};
+
+\end{tikzpicture}
+</script>
+
+      </div>
+
+      <p>
+        a) Which interval has the greatest frequency?<br>
+        b) What is the frequency of the interval 30-40?<br>
+        c) What is the total number of participants?
+      </p>
+
+    </div>
+
+    <!-- QUESTION 3 -->
+
+    <div class="question">
+
+      <h3>Question 3</h3>
+
+      <p>
+        Create a histogram using intervals of 5.
+      </p>
+
+      <p>
+        12, 15, 18, 19, 21, 22, 24, 27, 28, 30, 31, 33, 35
+      </p>
+
+    </div>
+
+    <!-- QUESTION 4 -->
+
+    <div class="question">
+
+      <h3>Question 4</h3>
+
+      <p>
+        Use the histogram to answer the questions.
+      </p>
+
+      <div class="diagram">
+
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.7]
+
+% axes
+\draw[->,thick] (0,0)--(12,0);
+\draw[->,thick] (0,0)--(0,9);
+
+% y labels
+\foreach \y in {1,2,3,4,5,6,7,8}
+{
+  \draw (-0.1,\y)--(0.1,\y);
+  \node[left] at (0,\y) {\y};
+}
+
+% bars
+\draw[fill=red!30] (1,0) rectangle (3,3);
+\draw[fill=red!30] (3,0) rectangle (5,6);
+\draw[fill=red!30] (5,0) rectangle (7,8);
+\draw[fill=red!30] (7,0) rectangle (9,5);
+\draw[fill=red!30] (9,0) rectangle (11,2);
+
+% x labels
+\node[below] at (2,0) {50-60};
+\node[below] at (4,0) {60-70};
+\node[below] at (6,0) {70-80};
+\node[below] at (8,0) {80-90};
+\node[below] at (10,0) {90-100};
+
+% titles
+\node[above] at (6,9) {Test Scores};
+\node[rotate=90] at (-1,4.5) {Frequency};
+
+\end{tikzpicture}
+</script>
+
+      </div>
+
+      <p>
+        a) Which score interval occurred the most?<br>
+        b) What is the frequency of the interval 60-70?<br>
+        c) How many students are represented in total?
+      </p>
+
+    </div>
+
+  </section>
+<!-- QUESTION 5 -->
+
+<div class="question">
+
+  <h3>Question 5</h3>
+
+  <p>
+    Create a histogram using intervals of 10.
+  </p>
+
+  <p>
+    11, 14, 17, 22, 25, 27, 29, 31, 33, 35, 38, 41, 44, 47
+  </p>
+
+</div>
+
+<!-- QUESTION 6 -->
+
+<div class="question">
+
+  <h3>Question 6</h3>
+
+  <p>
+    Use the histogram to answer the questions.
+  </p>
+
+  <div class="diagram">
+
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.7]
+
+% axes
+\draw[->,thick] (0,0)--(12,0);
+\draw[->,thick] (0,0)--(0,10);
+
+% y labels
+\foreach \y in {1,2,3,4,5,6,7,8,9}
+{
+  \draw (-0.1,\y)--(0.1,\y);
+  \node[left] at (0,\y) {\y};
+}
+
+% bars
+\draw[fill=green!30] (1,0) rectangle (3,2);
+\draw[fill=green!30] (3,0) rectangle (5,5);
+\draw[fill=green!30] (5,0) rectangle (7,9);
+\draw[fill=green!30] (7,0) rectangle (9,6);
+\draw[fill=green!30] (9,0) rectangle (11,3);
+
+% x labels
+\node[below] at (2,0) {0-5};
+\node[below] at (4,0) {5-10};
+\node[below] at (6,0) {10-15};
+\node[below] at (8,0) {15-20};
+\node[below] at (10,0) {20-25};
+
+% titles
+\node[above] at (6,10) {Hours of Exercise};
+\node[rotate=90] at (-1,5) {Frequency};
+
+\end{tikzpicture}
+</script>
+
+  </div>
+
+  <p>
+    a) Which interval has the highest frequency?<br>
+    b) How many students exercised between 15 and 20 hours?<br>
+    c) What is the total frequency?
+  </p>
+
+</div>
+
+<!-- QUESTION 7 -->
+
+<div class="question">
+
+  <h3>Question 7</h3>
+
+  <p>
+    Determine whether the data is evenly distributed, skewed left, or skewed right.
+  </p>
+
+  <div class="diagram">
+
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.7]
+
+% axes
+\draw[->,thick] (0,0)--(11,0);
+\draw[->,thick] (0,0)--(0,9);
+
+% bars
+\draw[fill=orange!40] (1,0) rectangle (3,8);
+\draw[fill=orange!40] (3,0) rectangle (5,6);
+\draw[fill=orange!40] (5,0) rectangle (7,4);
+\draw[fill=orange!40] (7,0) rectangle (9,2);
+\draw[fill=orange!40] (9,0) rectangle (11,1);
+
+% labels
+\node[below] at (2,0) {10-20};
+\node[below] at (4,0) {20-30};
+\node[below] at (6,0) {30-40};
+\node[below] at (8,0) {40-50};
+\node[below] at (10,0) {50-60};
+
+\end{tikzpicture}
+</script>
+
+  </div>
+
+</div>
+
+<!-- QUESTION 8 -->
+
+<div class="question">
+
+  <h3>Question 8</h3>
+
+  <p>
+    Compare the two intervals.
+  </p>
+
+  <div class="diagram">
+
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.7]
+
+% axes
+\draw[->,thick] (0,0)--(12,0);
+\draw[->,thick] (0,0)--(0,8);
+
+% bars
+\draw[fill=blue!30] (1,0) rectangle (3,2);
+\draw[fill=blue!30] (3,0) rectangle (5,4);
+\draw[fill=blue!30] (5,0) rectangle (7,7);
+\draw[fill=blue!30] (7,0) rectangle (9,5);
+\draw[fill=blue!30] (9,0) rectangle (11,3);
+
+% labels
+\node[below] at (2,0) {0-10};
+\node[below] at (4,0) {10-20};
+\node[below] at (6,0) {20-30};
+\node[below] at (8,0) {30-40};
+\node[below] at (10,0) {40-50};
+
+\end{tikzpicture}
+</script>
+
+  </div>
+
+  <p>
+    a) Which interval has a frequency of 7?<br>
+    b) Which interval has the lowest frequency?<br>
+    c) How many data values are represented altogether?
+  </p>
+
+</div>
+
+<!-- QUESTION 9 -->
+
+<div class="question">
+
+  <h3>Question 9</h3>
+
+  <p>
+    Create a histogram using intervals of 20.
+  </p>
+
+  <p>
+    5, 12, 17, 24, 28, 35, 39, 42, 47, 51, 59, 63, 68, 71, 77
+  </p>
+
+</div>
+
+<!-- QUESTION 10 -->
+
+<div class="question">
+
+  <h3>Question 10</h3>
+
+  <p>
+    Describe the shape of the histogram.
+  </p>
+
+  <div class="diagram">
+
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.7]
+
+% axes
+\draw[->,thick] (0,0)--(12,0);
+\draw[->,thick] (0,0)--(0,10);
+
+% bars
+\draw[fill=purple!30] (1,0) rectangle (3,1);
+\draw[fill=purple!30] (3,0) rectangle (5,3);
+\draw[fill=purple!30] (5,0) rectangle (7,7);
+\draw[fill=purple!30] (7,0) rectangle (9,9);
+\draw[fill=purple!30] (9,0) rectangle (11,8);
+
+% labels
+\node[below] at (2,0) {0-10};
+\node[below] at (4,0) {10-20};
+\node[below] at (6,0) {20-30};
+\node[below] at (8,0) {30-40};
+\node[below] at (10,0) {40-50};
+
+\end{tikzpicture}
+</script>
+
+  </div>
+
+  <p>
+    Is the histogram:
+    <br>
+    a) Symmetrical
+    <br>
+    b) Skewed left
+    <br>
+    c) Skewed right
+  </p>
+
+</div>
+</body>
+</html>

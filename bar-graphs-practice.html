@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bar Graphs Practice</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- TikZJax -->
+  <link rel="stylesheet"
+    href="https://tikzjax.com/v1/fonts.css">
+
+  <script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Bar Graphs Practice</h1>
+    <p>Math 8 Alberta Curriculum</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="math.html">Math</a>
+    <a href="math8.html">Math 8</a>
+    <a href="bar-graphs.html">Lesson</a>
+  </nav>
+
+  <section class="hero">
+
+    <h2>Practice Questions</h2>
+
+    <div class="question">
+
+      <h3>Question 1</h3>
+
+      <p>
+        Create a bar graph using the data below.
+      </p>
+
+      <table border="1" style="margin:auto;">
+        <tr>
+          <th>Favourite Fruit</th>
+          <th>Number of Students</th>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Orange</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Grape</td>
+          <td>7</td>
+        </tr>
+      </table>
+
+    </div>
+
+    <div class="question">
+
+      <h3>Question 2</h3>
+
+      <p>
+        Use the bar graph to answer the questions.
+      </p>
+
+      <div class="diagram">
+
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.6]
+
+% axes
+\draw[->,thick] (0,0)--(8,0);
+\draw[->,thick] (0,0)--(0,10);
+
+% y-axis labels
+\foreach \y in {2,4,6,8}
+{
+  \draw (-0.1,\y)--(0.1,\y);
+  \node[left] at (0,\y) {\y};
+}
+
+% bars
+\draw[fill=blue!30] (1,0) rectangle (2,5);
+\draw[fill=red!30] (3,0) rectangle (4,8);
+\draw[fill=green!30] (5,0) rectangle (6,3);
+\draw[fill=orange!40] (7,0) rectangle (8,6);
+
+% labels
+\node[below] at (1.5,0) {Cats};
+\node[below] at (3.5,0) {Dogs};
+\node[below] at (5.5,0) {Fish};
+\node[below] at (7.5,0) {Birds};
+
+\node[above] at (4,10) {Favourite Pets};
+\node[rotate=90] at (-1,5) {Students};
+
+\end{tikzpicture}
+</script>
+
+      </div>
+
+      <p>
+        a) Which pet was chosen the most?<br>
+        b) How many students chose fish?<br>
+        c) How many more students chose dogs than cats?
+      </p>
+
+    </div>
+
+    <div class="question">
+
+      <h3>Question 3</h3>
+
+      <p>
+        Complete the missing bar for Wednesday.
+      </p>
+
+      <p>
+        The number of books read was:
+      </p>
+
+      <table border="1" style="margin:auto;">
+        <tr>
+          <th>Day</th>
+          <th>Books Read</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>5</td>
+        </tr>
+      </table>
+
+    </div>
+
+    <div class="question">
+
+      <h3>Question 4</h3>
+
+      <p>
+        Use the double bar graph to compare the data.
+      </p>
+
+      <div class="diagram">
+
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.55]
+
+% axes
+\draw[->,thick] (0,0)--(10,0);
+\draw[->,thick] (0,0)--(0,12);
+
+% y-axis labels
+\foreach \y in {2,4,6,8,10}
+{
+  \draw (-0.1,\y)--(0.1,\y);
+  \node[left] at (0,\y) {\y};
+}
+
+% bars group 1
+\draw[fill=blue!30] (1,0) rectangle (1.6,7);
+\draw[fill=red!30] (1.7,0) rectangle (2.3,5);
+
+% bars group 2
+\draw[fill=blue!30] (4,0) rectangle (4.6,9);
+\draw[fill=red!30] (4.7,0) rectangle (5.3,6);
+
+% bars group 3
+\draw[fill=blue!30] (7,0) rectangle (7.6,4);
+\draw[fill=red!30] (7.7,0) rectangle (8.3,8);
+
+% labels
+\node[below] at (1.65,0) {Grade 7};
+\node[below] at (4.65,0) {Grade 8};
+\node[below] at (7.65,0) {Grade 9};
+
+% legend
+\draw[fill=blue!30] (6,11) rectangle (6.5,11.5);
+\node[right] at (6.6,11.25) {Soccer};
+
+\draw[fill=red!30] (6,10) rectangle (6.5,10.5);
+\node[right] at (6.6,10.25) {Basketball};
+
+\node[above] at (5,12) {Sports Choices};
+
+\end{tikzpicture}
+</script>
+
+      </div>
+
+      <p>
+        a) Which grade chose soccer the most?<br>
+        b) Which grade chose basketball the most?<br>
+        c) In Grade 8, how many more students chose soccer than basketball?
+      </p>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
