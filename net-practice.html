@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nets and 3-D Drawings Practice</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- TikZJax -->
+  <link rel="stylesheet"
+    href="https://tikzjax.com/v1/fonts.css">
+
+  <script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Nets and 3-D Drawings Practice</h1>
+    <p>Math 8 Alberta Curriculum</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="math.html">Math</a>
+    <a href="math8.html">Math 8</a>
+    <a href="net.html">Lesson</a>
+  </nav>
+
+  <section class="hero">
+
+    <h2>Practice Questions</h2>
+
+    <div class="question">
+      <h3>Question 1</h3>
+      <p>What 3-D shape is made by this net?</p>
+
+      <div class="diagram">
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.7]
+
+\draw (0,0) rectangle (2,2);
+\draw (2,0) rectangle (4,2);
+\draw (4,0) rectangle (6,2);
+\draw (2,2) rectangle (4,4);
+\draw (2,-2) rectangle (4,0);
+\draw (-2,0) rectangle (0,2);
+
+\end{tikzpicture}
+</script>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>Question 2</h3>
+      <p>What 3-D shape is made by this net?</p>
+
+      <div class="diagram">
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.8]
+
+% rectangular prism net
+\draw (0,0) rectangle (3,2);
+\draw (3,0) rectangle (6,2);
+\draw (6,0) rectangle (9,2);
+\draw (9,0) rectangle (12,2);
+
+\draw (3,2) rectangle (6,4);
+\draw (3,-2) rectangle (6,0);
+
+\end{tikzpicture}
+</script>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>Question 3</h3>
+      <p>Create the front, top, and side views of this 3-D shape.</p>
+
+      <div class="diagram">
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.7]
+
+% cube 1
+\draw (0,0) rectangle (2,2);
+\draw (0.6,0.6) rectangle (2.6,2.6);
+\draw (0,0)--(0.6,0.6);
+\draw (2,0)--(2.6,0.6);
+\draw (2,2)--(2.6,2.6);
+\draw (0,2)--(0.6,2.6);
+
+% cube 2 stacked on right
+\draw (2,0) rectangle (4,2);
+\draw (2.6,0.6) rectangle (4.6,2.6);
+\draw (4,0)--(4.6,0.6);
+\draw (4,2)--(4.6,2.6);
+
+\end{tikzpicture}
+</script>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>Question 4</h3>
+      <p>Draw an isometric model that matches these views.</p>
+
+      <table border="1" style="margin:auto;">
+        <tr>
+          <th>View</th>
+          <th>Drawing</th>
+        </tr>
+        <tr>
+          <td>Front</td>
+          <td>Two squares side by side</td>
+        </tr>
+        <tr>
+          <td>Top</td>
+          <td>Two squares side by side</td>
+        </tr>
+        <tr>
+          <td>Side</td>
+          <td>One square</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="question">
+      <h3>Question 5</h3>
+      <p>Which view is shown below: front, top, or side?</p>
+
+      <div class="diagram">
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.8]
+
+\draw (0,0) rectangle (2,2);
+\draw (2,0) rectangle (4,2);
+\draw (4,0) rectangle (6,2);
+
+\end{tikzpicture}
+</script>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>Question 6</h3>
+      <p>What 3-D shape is made by this net?</p>
+
+      <div class="diagram">
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.8]
+
+% triangular prism net
+\draw (0,0) rectangle (3,2);
+\draw (3,0) rectangle (6,2);
+\draw (6,0) rectangle (9,2);
+
+\draw (0,0)--(1.5,-1.8)--(3,0);
+\draw (6,2)--(7.5,3.8)--(9,2);
+
+\end{tikzpicture}
+</script>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
